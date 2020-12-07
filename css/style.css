@@ -4,9 +4,7 @@ body {
   font-size: 16px;
   color: #333333;
 }
-/**
- * Images a now responsive
- */
+
 img {
   max-width: 100%;
   height: auto;
@@ -20,10 +18,7 @@ header {
 .mh-logo img {
   width: 15rem;
 }
-/**
- * Limit the container in
- * width for big screens
- */
+
 .container {
   width: 1280px;
   max-width: 100%;
@@ -31,17 +26,6 @@ header {
   margin: 0 auto;
 }
 
-/**
- * By using display: flex
- * Logo and nav are in 2 cols
- * align-items make them
- * vertically centered
- * justify-content distribute
- * horizontal spaces around
- * and flex-wrap break the
- * things in two lines in
- * small screens
- */
 .main-header .container {
   display: flex;
   align-items: center;
@@ -49,12 +33,6 @@ header {
   flex-wrap: wrap;
 }
 
-/**
- * The followings are to
- * make things more
- * clean and airy
- * and contents centered
- */
 .main-nav ul {
   margin: 1em 0 0.5em;
   text-align: center;
@@ -70,7 +48,6 @@ header {
 nav ul li a {
   font-family: 'Grandstander', cursive;
   text-align: left;
-  /* font: normal normal normal 14px/25px Granstander Clean; */
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
@@ -99,14 +76,10 @@ nav ul li a {
 .list-button {
   float: right;
   border: 1px solid;
-  /* height: 50px; */
-  /* padding: 10px; */
   border-radius: 51px;
 }
 
 .list-button a {
-  /* line-height: 2.7rem;
-  width: 133px; */
   line-height: 1.9;
   vertical-align: middle;
 }
@@ -119,7 +92,6 @@ nav ul li a {
 }
 
 .list-button a span {
-  /* display: inline-block; */
   margin-left: 16px;
 }
 
@@ -199,7 +171,6 @@ h5 {
 .landing-image {
   background-image: url('../images/image10.png');
   max-width: 100%;
-  /* background-size: contain; */
   background-repeat: no-repeat;
   height: 395px;
   border-radius: 5px;
@@ -317,7 +288,6 @@ h5 {
   background-color: #ffffff;
   border: 1px solid #ff3a58;
   border-radius: 5px;
-  /* width: 100%; */
 }
 
 .section-divider {
@@ -329,13 +299,10 @@ h5 {
 
 .section-title h3 {
   font-family: 'Grandstander', cursive;
-  /* font-size: 1.5em; */
 }
 
 .progress-circle {
   font-size: 1.2em;
-  /* margin: 20px; */
-  position: relative; /* so that children can be absolutely positioned */
   padding: 0;
   width: 3em;
   height: 3em;
@@ -366,16 +333,14 @@ h5 {
   width: 3em;
   text-align: center;
   display: block;
-  /* color: #53777a; */
   z-index: 2;
 }
 .left-half-clipper {
-  /* a round circle */
   border-radius: 50%;
   width: 3em;
   height: 3em;
-  position: absolute; /* needed for clipping */
-  clip: rect(0, 3em, 3em, 1.5em); /* clips the whole left half*/
+  position: absolute;
+  clip: rect(0, 3em, 3em, 1.5em);
 }
 
 .left-half-clipper {
@@ -401,25 +366,21 @@ h5 {
   height: 3em;
   border-radius: 50%;
   border: 0.2em solid #53777a;
-  /* background-color: #4D642D; */
   box-sizing: border-box;
 }
 
 .section-button-1 {
   border: 1px solid #cbd8db;
-  /* background: #ffffff 0% 0% no-repeat padding-box; */
   box-shadow: 1px 1px 0px #0000001a;
   width: 100%;
   border-radius: 40px;
   height: 120%;
-  /* padding: 10%; */
 }
 .section-button-1 .explorer {
   font-family: 'Grandstander', cursive;
   font-size: 1.3em;
   position: relative;
   top: 25%;
-  /* line-height: 3 !important; */
 }
 .progress-circle span {
   color: #37575e;
@@ -478,12 +439,10 @@ h5 {
 
 .section-button-2 {
   border: 1px solid #cbd8db;
-  /* background: #ffffff 0% 0% no-repeat padding-box; */
   box-shadow: 1px 1px 0px #0000001a;
   width: 100%;
   border-radius: 40px 0 0 40px;
   height: 120%;
-  /* padding: 10%; */
 }
 
 .badges-inner-2 {
