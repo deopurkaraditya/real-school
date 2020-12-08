@@ -31,14 +31,14 @@ function showSlides(n) {
 
 function openNav() {
   if (screen.width < 700) {
-    document.getElementById('mySidepanel').style.width = '100%'
+    document.getElementById('realSidepanel').style.width = '100%'
   } else {
-    document.getElementById('mySidepanel').style.width = '30%'
+    document.getElementById('realSidepanel').style.width = '30%'
   }
 }
 
 function closeNav() {
-  document.getElementById('mySidepanel').style.width = '0'
+  document.getElementById('realSidepanel').style.width = '0'
 }
 
 function toggleIcon(e) {
