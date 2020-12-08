@@ -87,4 +87,8 @@
     font-size: 0.8em;
     cursor: pointer;
   }
+
+  .footer-icons {
+    color: #333333;
+  }
 }

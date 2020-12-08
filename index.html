@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -25,12 +26,19 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media-queries.css" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <link rel="stylesheet" href="./css/media-query.min.css" />
   </head>
   <body>
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#">Masterclass</a>
+      <a href="#">Programs</a>
+      <a href="#">Challenges</a>
+      <a href="#">Library</a>
+    </div>
     <header class="main-header">
-      <div class="navbar-button d-none d-sm-block">
+      <div class="navbar-button openbtn d-none d-sm-block" onclick="openNav()">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </div>
       <div class="row p-3 d-md-none">
@@ -49,7 +57,7 @@
             </a>
           </div>
         </div>
-        <div class="col-2">
+        <div class="col-2" onclick="openNav()">
           <i class="fa fa-bars fa-1 bars-mobile" aria-hidden="true"></i>
         </div>
       </div>
@@ -278,6 +286,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container slideshow-container position-relative">
         <div class="row mt-5">
           <div class="col-12">
             <div class="shape3 text-center">
@@ -285,8 +295,8 @@
             </div>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-md-3 col-12">
+        <div class="row mt-3 slideshow-wrapper">
+          <div class="slides">
             <div class="section-button-1">
               <span class="circle d-inline-block">
                 <div class="position-absolute badges-inner">+10P</div>
@@ -294,7 +304,7 @@
               <span class="badges">Creative thinking</span>
             </div>
           </div>
-          <div class="col-md-3 d-none d-md-block">
+          <div class="slides d-none d-md-block">
             <div class="section-button-1">
               <span class="circle d-inline-block">
                 <div class="position-absolute badges-inner">+10P</div>
@@ -302,7 +312,7 @@
               <span class="badges">Flexible Thinking</span>
             </div>
           </div>
-          <div class="col-md-3 d-none d-md-block">
+          <div class="slides d-none d-md-block">
             <div class="section-button-1">
               <span class="circle d-inline-block">
                 <div class="position-absolute badges-inner">+20P</div>
@@ -310,7 +320,7 @@
               <span class="badges">Management</span>
             </div>
           </div>
-          <div class="col-md-3 d-none d-md-block">
+          <div class="slides d-none d-md-block">
             <div class="section-button-1">
               <span class="circle d-inline-block">
                 <div class="position-absolute badges-inner">+20P</div>
@@ -318,7 +328,26 @@
               <span class="badges">Strategic thinking</span>
             </div>
           </div>
+          <div class="slides d-none d-md-block">
+            <div class="section-button-1">
+              <span class="circle d-inline-block">
+                <div class="position-absolute badges-inner">+20P</div>
+              </span>
+              <span class="badges">Learning</span>
+            </div>
+          </div>
         </div>
+        <a class="prev text-center" onclick="plusSlides(-1)"
+          ><i class="fa fa-angle-left" aria-hidden="true"></i
+        ></a>
+        <a class="next text-center" onclick="plusSlides(1)"
+          ><i class="fa fa-angle-right" aria-hidden="true"></i
+        ></a>
+        <!-- <div class="row text-center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div> -->
       </div>
     </section>
 
@@ -496,5 +525,224 @@
         </div>
       </div>
     </section>
+
+    <!-- <section class="mt-md-5 pt-md-3 position-relative">
+      <div class="section-title mt-4 text-center">
+        <h3>See what our students have created</h3>
+      </div>
+      <div class="center">
+        <div class="slick-img"></div>
+        <div class="slick-img"></div>
+        <div class="slick-img"></div>
+        <div class="slick-img"></div>
+        <div class="slick-img"></div>
+        <div class="slick-img"></div>
+        <div class="slick-img"></div>
+        <div class="slick-img"></div>
+        <div class="slick-img"></div>
+        <div class="slick-img"></div>
+      </div>
+      <div class="phone-image">
+        <img src="./images/iphone.png" alt="" />
+      </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark bg-footer d-none d-md-block">
+      <div class="">
+        <div class="p-5 text-center">
+          <button class="tv-button mt-3">Go to RealTV</button>
+        </div>
+
+      <div class="container text-center text-md-left mt-5">
+
+        <div class="row mt-3 text-light">
+
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+            <div>
+              <img src="./images/logo.png" class="img-fluid w-75" alt="">
+              <p class="text-justify mt-2 footer-logo-subtitle">A Product of uFaber Edutech</p>
+            </div>
+            <a class="footer-icons"><i class="fa fa-map-marker mr-3" aria-hidden="true"></i> <span>FF A-006, Art Guild House, Phoenix Market City, Kurla, Mumbai - 400070</span></a>
+            <a class="footer-icons" href="tel:91 8080 555 766"><i class="fa fa-phone mr-3" aria-hidden="true"></i> <span>+91 8080 555 766</span></a>
+            <a class="footer-icons" href="mailto:info@ufaber.com"><i class="fa fa-envelope mr-2" aria-hidden="true"></i><span>info@ufaber.com</span></a>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <h6 class="text-uppercase font-weight-bold">QUICK LINKS</h6>
+            <p>
+              <a href="#!">Teach with Us</a>
+            </p>
+            <p>
+              <a href="#!">Refer a friend</a>
+            </p>
+            <p>
+              <a href="#!">Become an Affiliate</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <p>
+              <a href="#!">About Us</a>
+            </p>
+            <p>
+              <a href="#!">FAQs</a>
+            </p>
+            <p>
+              <a href="#!">Blog</a>
+            </p>
+            <p>
+              <a href="#!">Privacy Policy</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 social-icons">
+            <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+            <span><i class="fa fa-instagram mr-5 ml-5" aria-hidden="true"></i></span>
+            <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
+
+            <div class="mt-5">
+              <span><img src="./images/googleplaystore.png" class="img-fluid w-50" alt="Get it from playstore"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright text-center py-3">
+        © 2019 uFaber, All rights reserved uFaber Edutech
+      </div>
+    </footer>
+
+    <footer class="d-md-none bg-footer">
+      <div class="p-5 text-center">
+        <button class="tv-button mt-3">Go to RealTV</button>
+      </div>
+      <div class="text-center text-md-left">
+        <img src="./images/logo.png" class="img-fluid w-75" alt="logo">
+        <p class="text-justify mt-2 footer-logo-subtitle text-center text-md-left">A Product of uFaber Edutech</p>
+      </div>
+      <div class="accordion" id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <a class="w-100" type="button" data-toggle="collapse" data-target="#contactUs">
+                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
+                Contact Us
+              </a>
+            </h2>
+          </div>
+      
+          <div id="contactUs" class="collapse show">
+            <div class="card-body">
+              <a class="footer-icons" ><i class="fa fa-map-marker mr-3" aria-hidden="true"></i> <span>FF A-006, Art Guild House, Phoenix Market City, Kurla, Mumbai - 400070</span></a>
+              <a class="footer-icons" href="tel:91 8080 555 766"><i class="fa fa-phone mr-3" aria-hidden="true"></i> <span>+91 8080 555 766</span></a>
+              <a class="footer-icons" href="mailto:info@ufaber.com"><i class="fa fa-envelope mr-2" aria-hidden="true"></i><span>info@ufaber.com</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <a class="collapsed w-100" type="button" data-toggle="collapse" data-target="#teachwithUs" aria-expanded="false">
+                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
+                Teach with Us
+              </a>
+            </h2>
+          </div>
+      
+          <div id="teachwithUs" class="collapse show" aria-expanded="false" >
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <a class="collapsed w-100" type="button" data-toggle="collapse" data-target="">
+                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
+                Refer a friend
+              </a>
+            </h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <a class="collapsed w-100" type="button" data-toggle="collapse" data-target="">
+                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
+                Become an Affiliate
+              </a>
+            </h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="collapsed card-header" id="headingOne">
+            <h2 class="mb-0">
+              <a class="w-100" type="button" data-toggle="collapse" data-target="">
+                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
+                About Us              </a>
+            </h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <a class="collapsed w-100" type="button" data-toggle="collapse" data-target="">
+                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
+                Blog              </a>
+            </h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <a class="collapsed w-100" type="button" data-toggle="collapse" data-target="">
+                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
+                Privacy Policy
+              </a>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script>
+      $('.center').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 5,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1,
+            },
+          },
+        ],
+      })
+    </script>
   </body>
 </html>
