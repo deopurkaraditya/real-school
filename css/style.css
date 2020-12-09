@@ -598,7 +598,7 @@ h5 {
   border-radius: 5px;
 }
 .slick-img {
-  background-image: url(../images/image5.png);
+  background-image: url(../images/image5.jpg);
   background-size: cover;
   height: 700px;
   width: 19vw;
@@ -895,4 +895,38 @@ footer p {
   /* symbol for "collapsed" panels */
   content: '\f105 ';
   color: #707070;
+}
+
+.big-img {
+  background-image: url(../images/image5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  /* max-width: 20vw; */
+  padding: 0;
+  margin: 0;
+}
+
+.slick-center {
+  transform: scale(1.5);
+}
+
+.big-slider div {
+  opacity: 0.7;
+}
+
+.mobile-slider {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 10;
+  height: 110%;
+  top: -4%;
+  box-shadow: 5px 5px 0px #00000029;
+}
+
+.inner-img {
+  background-image: url(../images/image5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
