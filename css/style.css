@@ -763,7 +763,7 @@ footer h6 {
 }
 
 footer a,
-p {
+footer p {
   color: #ffffff;
 }
 
@@ -785,8 +785,8 @@ p {
 .card-header a {
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 0.5em;
+  font-weight: 300;
+  font-size: 0.9em;
   vertical-align: middle;
 }
 
@@ -797,4 +797,102 @@ p {
 
 .accordion .card {
   border: #333333;
+}
+
+/* .skill-slider .section-button-1 {
+  margin: 0.7em;
+} */
+
+.skill-div {
+  height: 60px;
+  width: 300px;
+  border: 1px solid #cbd8db;
+  box-shadow: 1px 1px 0px #0000001a;
+  width: 250px;
+  border-radius: 40px;
+  position: relative;
+}
+
+.skill-circle {
+  line-height: 3;
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: #ffe30d;
+  color: #8a7a00;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 3%;
+  font-family: 'Grandstander', cursive;
+  font-size: 1.2em;
+}
+
+.skill-title {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: 'Grandstander', cursive;
+  font-size: 1.2em;
+}
+
+/* the slides */
+.slick-slide {
+  margin: 0 15px;
+}
+/* the parent */
+.slick-list {
+  margin: 0 -15px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 24px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #313131;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:before {
+  margin-right: -20px;
+}
+
+.slick-next:before {
+  margin-left: -20px;
+}
+
+/* .bades-slider-mobile .skill-div{
+  max-width: 300px;
+} */
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #cbd8db !important;
+  font-size: 9px !important;
+}
+
+.slick-dots li button:before {
+  opacity: 1 !important;
+  color: #e5ecee !important;
+  font-size: 9px !important;
+}
+
+.accordion .card-header:after {
+  font-family: 'FontAwesome';
+  content: '\f107';
+  float: right;
+  color: #707070;
+}
+.accordion .card-header.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: '\f105 ';
+  color: #707070;
 }

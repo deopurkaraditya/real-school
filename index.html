@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Best Tutorials around the web">
-    <meta name="keywords" content="master, class, teacher, tutorials">
-    <meta name="author" content="Real school">
+    <meta name="description" content="Best Tutorials around the web" />
+    <meta name="keywords" content="master, class, teacher, tutorials" />
+    <meta name="author" content="Real school" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -28,9 +28,20 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-
-    <link rel="stylesheet" href="./css/styles.min.css" />
-    <link rel="stylesheet" href="./css/media-query.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
   </head>
   <body>
     <div id="realSidepanel" class="sidepanel">
@@ -240,7 +251,7 @@
             </div>
           </div>
         </div>
-        <div class="row mt-3">
+        <div class="row mt-3 d-none d-md-flex">
           <div class="col-md-3 col-12 d-md-none mb-3">
             <div class="shape1 text-center">
               <p class="shape-title">Goals</p>
@@ -289,68 +300,79 @@
             </div>
           </div>
         </div>
+
+        <div class="row d-md-none d-flex mb-5 mt-2">
+          <div class="col-12 mb-3">
+            <div class="shape1 text-center">
+              <p class="shape-title">Goals</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="section-button-1">
+              <div class="progress-circle p10 float-left">
+                <span>+15%</span>
+                <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+                </div>
+              </div>
+              <span class="ml-4 explorer">Explorer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-block d-md-none mt-3 mb-3">
+          <div class="shape2 text-center">
+            <p class="shape-title">Badges</p>
+          </div>
+        </div>
+
+        <div class="badges-slider-mobile d-block d-md-none">
+          <div class="skill-div">
+            <div class="skill-circle">+10P</div>
+            <div class="skill-title">Powerhouse of Ideas</div>
+          </div>
+          <div class="skill-div">
+            <div class="skill-circle">+10P</div>
+            <div class="skill-title">Daredevil</div>
+          </div>
+          <div class="skill-div">
+            <div class="skill-circle">+20P</div>
+            <div class="skill-title">The Troubleshooter</div>
+          </div>
+        </div>
       </div>
-      <div class="container slideshow-container position-relative">
-        <div class="row mt-5">
+      <div class="container slideshow-container position-relative p-3">
+        <div class="row mt-2 mt-md-5 mb-md-5 mb-3">
           <div class="col-12">
             <div class="shape3 text-center">
               <p class="shape-title">Skills</p>
             </div>
           </div>
         </div>
-        <div class="row mt-3 slideshow-wrapper">
-          <div class="slides">
-            <div class="section-button-1">
-              <span class="circle d-inline-block">
-                <div class="position-absolute badges-inner">+10P</div>
-              </span>
-              <span class="badges">Creative thinking</span>
-            </div>
+
+        <div class="skill-slider">
+          <div class="skill-div creative-thinking">
+            <div class="skill-circle">+10P</div>
+            <div class="skill-title">Creative thinking</div>
           </div>
-          <div class="slides d-none d-md-block">
-            <div class="section-button-1">
-              <span class="circle d-inline-block">
-                <div class="position-absolute badges-inner">+10P</div>
-              </span>
-              <span class="badges">Flexible Thinking</span>
-            </div>
+          <div class="skill-div">
+            <div class="skill-circle">+10P</div>
+            <div class="skill-title">Flexible Thinking</div>
           </div>
-          <div class="slides d-none d-md-block">
-            <div class="section-button-1">
-              <span class="circle d-inline-block">
-                <div class="position-absolute badges-inner">+20P</div>
-              </span>
-              <span class="badges">Management</span>
-            </div>
+          <div class="skill-div">
+            <div class="skill-circle">+20P</div>
+            <div class="skill-title">Management</div>
           </div>
-          <div class="slides d-none d-md-block">
-            <div class="section-button-1">
-              <span class="circle d-inline-block">
-                <div class="position-absolute badges-inner">+20P</div>
-              </span>
-              <span class="badges">Strategic thinking</span>
-            </div>
+          <div class="skill-div">
+            <div class="skill-circle">+20P</div>
+            <div class="skill-title">Strategic thinking</div>
           </div>
-          <div class="slides d-none d-md-block">
-            <div class="section-button-1">
-              <span class="circle d-inline-block">
-                <div class="position-absolute badges-inner">+20P</div>
-              </span>
-              <span class="badges">Learning</span>
-            </div>
+          <div class="skill-div">
+            <div class="skill-circle">+10P</div>
+            <div class="skill-title">Learning</div>
           </div>
         </div>
-        <a class="prev text-center" onclick="plusSlides(-1)"
-          ><i class="fa fa-angle-left" aria-hidden="true"></i
-        ></a>
-        <a class="next text-center" onclick="plusSlides(1)"
-          ><i class="fa fa-angle-right" aria-hidden="true"></i
-        ></a>
-        <!-- <div class="row text-center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div> -->
       </div>
     </section>
 
@@ -385,37 +407,45 @@
         <div class="section-title mt-4">
           <h3>What are the Post-Class Assignments?</h3>
         </div>
-        <div class="row mt-lg-4">
+        <div class="row mt-lg-4 card-slider">
           <div class="col-lg-4">
             <div class="card rounded">
-              <img src="./images/image10.png" class="card-img-top" alt="..." />
+              <img
+                src="./images/image10.png"
+                class="card-img-top card-image"
+                alt="..."
+              />
               <div class="card-body">
                 <div class="row">
-                  <div class="col-lg-10">
+                  <div class="col-lg-10 col-8">
                     <h4 class="card-title card-title-1">
                       #3 Words in <br />
                       French
                     </h4>
                   </div>
-                  <div class="col-lg-2 pt-4">
+                  <div class="col-lg-2 col-4 pt-4">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 d-none d-md-block">
+          <div class="col-lg-4">
             <div class="card rounded">
-              <img src="./images/image10.png" class="card-img-top" alt="..." />
+              <img
+                src="./images/image10.png"
+                class="card-img-top card-image"
+                alt="..."
+              />
               <div class="card-body">
                 <div class="row">
-                  <div class="col-lg-10">
+                  <div class="col-lg-10 col-8">
                     <h4 class="card-title card-title-1">
                       #3 Words in <br />
                       French
                     </h4>
                   </div>
-                  <div class="col-lg-2 pt-4">
+                  <div class="col-lg-2 col-4 pt-4">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                   </div>
                 </div>
@@ -457,11 +487,15 @@
         <div class="section-title mt-4 pt-4 pt-md-0">
           <h3>How to attend this class?</h3>
         </div>
-        <div class="card-deck">
-          <div class="card p-3">
+        <div class="row card-deck card-deck-slider p-3">
+          <div class="col-md-3 col-12 card p-3">
             <div class="card-body text-center">
               <div>
-                <img src="./images/device.png" alt="" />
+                <img
+                  src="./images/device.png"
+                  class="img-responsive img-fluid"
+                  alt=""
+                />
               </div>
               <div class="step-title m-3">
                 <h6>STEP 1</h6>
@@ -474,16 +508,20 @@
               </div>
             </div>
           </div>
-          <div class="card p-3 d-none d-md-block">
+          <div class="col-md-3 col-12 card p-3 d-md-block">
             <div class="card-body text-center">
               <div>
-                <img src="./images/device.png" alt="" />
+                <img
+                  src="./images/device.png"
+                  class="img-responsive img-fluid"
+                  alt=""
+                />
               </div>
               <div class="step-title m-3">
                 <h6>STEP 2</h6>
               </div>
               <div class="mt-4">
-                <h5 class="step-subtitle">Book your Class</h5>
+                <h5 class="step-subtitle">Get Prepared</h5>
                 <p class="step-paragraph mb-lg-0">
                   Prepare for the class by following the instructions in the
                   Overview.
@@ -491,16 +529,16 @@
               </div>
             </div>
           </div>
-          <div class="card p-3 d-none d-md-block">
+          <div class="col-md-3 col-12 card p-3 d-md-block">
             <div class="card-body text-center">
               <div>
-                <img src="./images/device.png" alt="" />
+                <img src="./images/device.png" class="img-responsive" alt="" />
               </div>
               <div class="step-title m-3">
                 <h6>STEP 3</h6>
               </div>
               <div class="mt-4">
-                <h5 class="step-subtitle">Book your Class</h5>
+                <h5 class="step-subtitle">Set up for Class</h5>
                 <p class="step-paragraph mb-lg-0">
                   Check the device and app requirements at least 15 minutes
                   prior to start time.
@@ -508,16 +546,16 @@
               </div>
             </div>
           </div>
-          <div class="card p-3 d-none d-md-block">
+          <div class="col-md-3 col-12 card p-3 d-md-block">
             <div class="card-body text-center">
               <div>
-                <img src="./images/device.png" alt="" />
+                <img src="./images/device.png" class="img-responsive" alt="" />
               </div>
               <div class="step-title m-3">
                 <h6>STEP 4</h6>
               </div>
               <div class="mt-4">
-                <h5 class="step-subtitle">Book your Class</h5>
+                <h5 class="step-subtitle">Join Class</h5>
                 <p class="step-paragraph mb-lg-0">
                   Open link sent on your registered mobile or email on the
                   device
@@ -551,29 +589,42 @@
     </section> -->
 
     <!-- Footer -->
-    <footer class="page-footer font-small unique-color-dark bg-footer d-none d-md-block">
+    <footer
+      class="page-footer font-small unique-color-dark bg-footer d-none d-md-block"
+    >
       <div class="">
         <div class="p-5 text-center">
           <button class="tv-button mt-3">Go to RealTV</button>
         </div>
+      </div>
 
       <div class="container text-center text-md-left mt-5">
-
         <div class="row mt-3 text-light">
-
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
             <div>
-              <img src="./images/logo.png" class="img-fluid w-75" alt="">
-              <p class="text-justify mt-2 footer-logo-subtitle">A Product of uFaber Edutech</p>
+              <img src="./images/logo.png" class="img-fluid w-75" alt="" />
+              <p class="text-justify mt-2 footer-logo-subtitle">
+                A Product of uFaber Edutech
+              </p>
             </div>
-            <a class="footer-icons"><i class="fa fa-map-marker mr-3" aria-hidden="true"></i> <span>FF A-006, Art Guild House, Phoenix Market City, Kurla, Mumbai - 400070</span></a>
-            <a class="footer-icons" href="tel:91 8080 555 766"><i class="fa fa-phone mr-3" aria-hidden="true"></i> <span>+91 8080 555 766</span></a>
-            <a class="footer-icons" href="mailto:info@ufaber.com"><i class="fa fa-envelope mr-2" aria-hidden="true"></i><span>info@ufaber.com</span></a>
+            <a class="footer-icons"
+              ><i class="fa fa-map-marker mr-3" aria-hidden="true"></i>
+              <span
+                >FF A-006, Art Guild House, Phoenix Market City, Kurla, Mumbai -
+                400070</span
+              ></a
+            >
+            <a class="footer-icons" href="tel:91 8080 555 766"
+              ><i class="fa fa-phone mr-3" aria-hidden="true"></i>
+              <span>+91 8080 555 766</span></a
+            >
+            <a class="footer-icons" href="mailto:info@ufaber.com"
+              ><i class="fa fa-envelope mr-2" aria-hidden="true"></i
+              ><span>info@ufaber.com</span></a
+            >
           </div>
 
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-
             <h6 class="text-uppercase font-weight-bold">QUICK LINKS</h6>
             <p>
               <a href="#!">Teach with Us</a>
@@ -587,7 +638,6 @@
           </div>
 
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
             <p>
               <a href="#!">About Us</a>
             </p>
@@ -602,13 +652,22 @@
             </p>
           </div>
 
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 social-icons">
+          <div
+            class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 social-icons"
+          >
             <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
-            <span><i class="fa fa-instagram mr-5 ml-5" aria-hidden="true"></i></span>
+            <span
+              ><i class="fa fa-instagram mr-5 ml-5" aria-hidden="true"></i
+            ></span>
             <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span>
 
             <div class="mt-5">
-              <span><img src="./images/googleplaystore.png" class="img-fluid w-50" alt="Get it from playstore"></span>
+              <span
+                ><img
+                  src="./images/googleplaystore.png"
+                  class="img-fluid w-50"
+                  alt="Get it from playstore"
+              /></span>
             </div>
           </div>
         </div>
@@ -620,94 +679,132 @@
     </footer>
 
     <footer class="d-md-none bg-footer">
-      <div class="p-5 text-center">
-        <button class="tv-button mt-3">Go to RealTV</button>
+      <div class="p-4 text-center">
+        <button class="tv-button mt-3 mb-3">Go to RealTV</button>
       </div>
-      <div class="text-center text-md-left">
-        <img src="./images/logo.png" class="img-fluid w-75" alt="logo">
-        <p class="text-justify mt-2 footer-logo-subtitle text-center text-md-left">A Product of uFaber Edutech</p>
+      <div class="p-4">
+        <img src="./images/logo.png" class="img-fluid w-50" alt="logo" />
+        <p class="text-justify mt-2 footer-logo-subtitle">
+          A Product of uFaber Edutech
+        </p>
       </div>
-      <div class="accordion" id="accordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <a class="w-100" type="button" data-toggle="collapse" data-target="#contactUs">
-                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
-                Contact Us
-              </a>
-            </h2>
+
+      <div id="accordion" class="accordion">
+        <div class="card mb-0">
+          <div
+            class="card-header collapsed"
+            data-toggle="collapse"
+            data-parent="#accordion"
+            href=""
+          >
+            <a class="card-title">
+              Download the App
+              <span class="ml-4"
+                ><i class="fa fa-android" aria-hidden="true"></i
+              ></span>
+              <span class="ml-4"
+                ><i class="fa fa-apple" aria-hidden="true"></i
+              ></span>
+            </a>
           </div>
-      
-          <div id="contactUs" class="collapse show">
-            <div class="card-body">
-              <a class="footer-icons" ><i class="fa fa-map-marker mr-3" aria-hidden="true"></i> <span>FF A-006, Art Guild House, Phoenix Market City, Kurla, Mumbai - 400070</span></a>
-              <a class="footer-icons" href="tel:91 8080 555 766"><i class="fa fa-phone mr-3" aria-hidden="true"></i> <span>+91 8080 555 766</span></a>
-              <a class="footer-icons" href="mailto:info@ufaber.com"><i class="fa fa-envelope mr-2" aria-hidden="true"></i><span>info@ufaber.com</span></a>
+          <div
+            class="card-header collapsed"
+            data-toggle="collapse"
+            href="#contact"
+          >
+            <a class="card-title"> Contact Us </a>
+          </div>
+          <div id="contact" class="card-body collapse" data-parent="#accordion">
+            <div>
+              <a class="footer-icons"
+                ><i class="fa fa-map-marker mr-3" aria-hidden="true"></i>
+                <span
+                  >FF A-006, Art Guild House, Phoenix Market City, Kurla, Mumbai
+                  - 400070</span
+                ></a
+              >
+              <a class="footer-icons" href="tel:91 8080 555 766"
+                ><i class="fa fa-phone mr-3" aria-hidden="true"></i>
+                <span>+91 8080 555 766</span></a
+              >
+              <a class="footer-icons" href="mailto:info@ufaber.com"
+                ><i class="fa fa-envelope mr-2" aria-hidden="true"></i
+                ><span>info@ufaber.com</span></a
+              >
             </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <a class="collapsed w-100" type="button" data-toggle="collapse" data-target="#teachwithUs" aria-expanded="false">
-                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
-                Teach with Us
-              </a>
-            </h2>
+          <div
+            class="card-header collapsed"
+            data-toggle="collapse"
+            data-parent="#accordion"
+            href=""
+          >
+            <a class="card-title"> Teach with Us </a>
           </div>
-      
-          <div id="teachwithUs" class="collapse show" aria-expanded="false" >
+          <div id="teach" class="card-body collapse" data-parent="#accordion">
+            <p></p>
+          </div>
+          <div
+            class="card-header collapsed"
+            data-toggle="collapse"
+            data-parent="#accordion"
+            href=""
+          >
+            <a class="card-title"> Refer a Friend </a>
+          </div>
+          <div id="refer" class="collapse" data-parent="#accordion">
             <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+              on it squid single-origin coffee nulla assumenda shoreditch et.
+              samus labore sustainable VHS.
             </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <a class="collapsed w-100" type="button" data-toggle="collapse" data-target="">
-                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
-                Refer a friend
-              </a>
-            </h2>
+          <div
+            class="card-header collapsed"
+            data-toggle="collapse"
+            data-parent="#accordion"
+            href=""
+          >
+            <a class="card-title"> Become an Affiliate </a>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <a class="collapsed w-100" type="button" data-toggle="collapse" data-target="">
-                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
-                Become an Affiliate
-              </a>
-            </h2>
+          <div id="affiliate" class="collapse" data-parent="#accordion">
+            <div class="card-body"></div>
           </div>
-        </div>
-        <div class="card">
-          <div class="collapsed card-header" id="headingOne">
-            <h2 class="mb-0">
-              <a class="w-100" type="button" data-toggle="collapse" data-target="">
-                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
-                About Us              </a>
-            </h2>
+          <div
+            class="card-header collapsed"
+            data-toggle="collapse"
+            data-parent="#accordion"
+            href=""
+          >
+            <a class="card-title"> About Us </a>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <a class="collapsed w-100" type="button" data-toggle="collapse" data-target="">
-                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
-                Blog              </a>
-            </h2>
+          <div id="affiliate" class="collapse" data-parent="#accordion">
+            <div class="card-body"></div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <a class="collapsed w-100" type="button" data-toggle="collapse" data-target="">
-                <i class="more-less fa fa-angle-right" aria-hidden="true"></i>
-                Privacy Policy
-              </a>
-            </h2>
+          <div
+            class="card-header collapsed"
+            data-toggle="collapse"
+            data-parent="#accordion"
+            href=""
+          >
+            <a class="card-title"> Blog </a>
+          </div>
+          <div id="affiliate" class="collapse" data-parent="#accordion">
+            <div class="card-body"></div>
+          </div>
+          <div
+            class="card-header collapsed"
+            data-toggle="collapse"
+            data-parent="#accordion"
+            href=""
+          >
+            <a class="card-title"> Privacy Policy </a>
+          </div>
+          <div id="affiliate" class="collapse" data-parent="#accordion">
+            <div class="card-body"></div>
           </div>
         </div>
       </div>
@@ -717,35 +814,17 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
 
     <script type="text/javascript" src="./js/main.js"></script>
-    <script>
-      $('.center').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 5,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1,
-            },
-          },
-        ],
-      })
-    </script>
   </body>
 </html>

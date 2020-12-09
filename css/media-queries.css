@@ -91,4 +91,33 @@
   .footer-icons {
     color: #333333;
   }
+  .card-image {
+    width: 100% !important;
+  }
+  .img-responsive {
+    margin: 0 auto;
+  }
+
+  .card-mobile img {
+    width: 65px;
+    margin: 0 auto;
+  }
+
+  .tv-button {
+    width: 100%;
+  }
+  /* .card-deck-slider .slick-initialized .slick-slide {
+    display: block !important;
+  } */
+
+  .fa-angle-right:before,
+  .fa-angle-down:before {
+    font-size: 23px;
+    color: #707070;
+  }
+
+  .fa-apple,
+  .fa-android {
+    font-size: 1.5em;
+  }
 }
